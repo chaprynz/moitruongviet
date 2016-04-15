@@ -20,7 +20,7 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 
 group :development, :test do
     gem 'byebug'
-    gem 'sqlite3'
+    gem 'pg'
     gem 'web-console', '~> 2.0'
   gem 'spring'
 end
