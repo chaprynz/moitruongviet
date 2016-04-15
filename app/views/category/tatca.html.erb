@@ -1,0 +1,12 @@
+<div class="w3-main" style="margin:auto;max-width:1260px">
+	<div class="w3-container w3-padding-jumpo">
+		<%= render partial: "shared/sidebar" %>
+	</div>
+</div>	
+<script>
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+    }
+}
+</script>

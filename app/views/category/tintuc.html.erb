@@ -1,0 +1,37 @@
+<div class="w3-main" style="margin:auto;max-width:1260px">
+	<div class="w3-container w3-padding-jumpo">
+		<%= render partial: "shared/sidebar" %>
+		
+		
+		<div class="w3-col l9 m9 s12">
+			<div class="w3-padding  w3-container">
+	
+	<div class="w3-container w3-white w3-padding">
+		<h1>Tin Tức</h1>
+		<% @posts.where('category_id = 2').limit(8).each do |post| %>	
+			<%= link_to [post.category, post] do %>
+        		<div class="w3-border-bottom w3-container">
+        			<div class="w3-col l4 m4 s12 w3-padding">
+        				<img class=" w3-round" src="http://www.maylocnuockarofi.com.vn/uploads/images/may-loc-nuoc-karofi/210x140-01.jpg" style="width:100%">	
+        			</div>
+        			
+        			<div class="  w3-col l8 m8 s12">
+        				<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><%= post.title %></span></span></strong></p>	
+        				<p>dsadasdasdasdasdasdas</p>
+        				
+        			</div>
+        		</div><br>
+			<% end %>	
+		<% end %>
+	</div>	
+</div>
+	</div>
+	</div>
+</div>			
+<script>
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+    }
+}
+</script>

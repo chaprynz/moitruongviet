@@ -1,0 +1,31 @@
+<div class="w3-col l3 m3 s12" style="margin-bottom:20px">
+			<div class="w3-card-1 w3-topbar w3-border-blue">
+				<div class="w3-container w3-white ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;">Danh Mục Sản Phẩm</span></span></strong></p>
+				</div>
+				<% @categories.each do |category| %>
+					<div class="w3-container active w3-border-bottom w3-pale-blue ">
+							<p><strong><span style="color: rgb(184, 49, 47);"><span style="font-size: 18px;"><%= link_to category, class: "w3-hover-text-blue" do %><i class="fa fa-chevron-circle-down" aria-hidden="true"></i> <%= category.name %><% end %></span></span></strong></p>
+						</div>	
+				<% end %>
+				<div class="w3-container w3-border-bottom w3-pale-blue ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><%= link_to tatca_path, class: "w3-hover-text-blue" do %><i class="fa fa-plus-circle" aria-hidden="true"></i> Xem Tất Cả SP<% end %></span></span></strong></p>
+				</div>
+				<div class="w3-container w3-border-bottom w3-pale-blue ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><%= link_to khachhang_path, class: "w3-hover-text-blue" do %><i class="fa fa-home" aria-hidden="true"></i> Khách hàng & Các dự án <% end %></span></span></strong></p>
+				</div>
+				<div class="w3-container w3-border-bottom w3-pale-blue ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><%= link_to tintuc_path, class: "w3-hover-text-blue" do %><i class="fa fa-newspaper-o" aria-hidden="true"></i> Tin Tức<% end %></span></span></strong></p>
+				</div>
+				<div class="w3-container w3-border-bottom w3-pale-blue ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><i class="fa fa-phone-square" aria-hidden="true"></i> Liên Hệ</span></span></strong></p>
+					<p><strong><span style="color: rgb(184, 49, 47);"><span style="font-size: 18px;">09.087.668. 888</span></span></strong></p>
+					<p><strong><span style="color: rgb(184, 49, 47);"><span style="font-size: 18px;"><i class="fa fa-map-marker"></i> 26, Nguyễn Sỹ Sách, TP.Vinh</span></span></strong></p>
+					<%= link_to "https://www.facebook.com/ydt.nguyen" do %><p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</span></span></strong></p><% end %>	
+				</div>
+				<div class="w3-container w3-border-bottom w3-pale-blue ">
+					<p><strong><span style="color: rgb(41, 105, 176);"><span style="font-size: 18px;"><%= link_to video_path, class: "w3-hover-text-blue" do %><i class="fa fa-youtube-square" aria-hidden="true"></i> Video<% end %></span></span></strong></p>
+				</div>
+			</div>	
+		</div>
+		
